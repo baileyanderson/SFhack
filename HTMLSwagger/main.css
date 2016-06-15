@@ -1,0 +1,47 @@
+.mainframe {
+    background: #cc0717;
+    border-radius: 14px;
+    width: 657px;
+    height: 701px;
+    position: relative;
+    display: block;
+}
+ 
+.greyboxjake {
+    height: 95px;
+    width: 100%;
+    background: #f2f2f2;
+    position: relative;
+    display: block;
+}
+ 
+.greyboxyou {
+    height: 95px;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    display: block;
+}
+ 
+.title {
+    color: white;
+    font-family: sans-serif;
+    font-size: 28px;
+    padding-bottom: 23.5px;
+    padding-left: 25px;
+    padding-top: 27.5px;
+}
+ 
+.content {
+   
+}
+ 
+body {
+    background-image: url("SFH.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.text {
+   
+}
