@@ -1,0 +1,9 @@
+{% if listIn %}
+    <ul>
+    {% for question in listIn %}
+        <li><a>{{question}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
