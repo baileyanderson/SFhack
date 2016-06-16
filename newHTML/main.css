@@ -1,0 +1,203 @@
+@font-face {
+font-family: SFNewsGothicDemi;
+src: url('SFNewsGothic-Demi.otf');
+}
+
+body {
+    background-image: url("SFH.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(0.6);
+    transform-origin: 160% 100%;
+}
+
+.mainframe {
+    background: #cc0717;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 657px;
+    height: 701px;
+    position: absolute;
+    display: none;
+    left: 25%;
+    width: 50%;
+    margin: 31.5% 0 0 -25%;
+    border-style: solid;
+    border-color: #696969;
+    border-width: thin;
+}
+
+.downarrow {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    float: right;
+    padding-right: 24px;
+    padding-top: 34px;
+}
+
+.greyboxjake {
+    height: auto;
+    width: 100%;
+    background: #f2f2f2;
+    display: block;
+}
+
+.greyboxyou {
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+    display: block;
+}
+ 
+.title {
+    color: white;
+    font-family: SFNewsGothicDemi;
+    font-size: 36px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-top: 27.5px;
+    width: 500px;
+}
+ 
+.container {
+    text-align: center;
+    display: block;
+    float: left;
+    margin-top: 1.3em;
+    margin-left: 1.3em;
+}
+ 
+.time {
+    position: relative;
+    display: block;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #b6b6b6;
+    float: right;
+    padding-right: 20px;
+    padding-top: 24px;
+}
+ 
+.textcontainer {
+    width: 65%;
+    height: auto;
+    padding-top: 24px;
+    padding-left: 5.5em;
+    padding-bottom: 24px;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+
+.profile {
+    display: block;
+    position: relative;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    float: left;
+}
+ 
+.textBox {
+    height: 122px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    display: block;
+}
+ 
+.send {
+    background: #0a70bc;
+    color: #fff;
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+textarea {
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+#input {
+    font-size: 20px;
+    resize: none;
+    outline: none;
+}
+
+.mainframetab {
+    background: #cc0717;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 330px;
+    height: 65px;
+    position: absolute;
+    display: block;
+    left: 25%;
+    margin: 81.5% 0 0 -2%
+}
+ 
+.titletab {
+    color: white;
+    font-family: SFNewsGothicDemi;
+    font-size: 28px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: auto;
+}
+ 
+.downarrowtab {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    margin-left: 289px;
+    margin-top: 25px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.toggleVisionButton {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    margin-left: 289px;
+    margin-top: 25px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.convoWin {
+    overflow: scroll;
+    height: 475px;
+    width: auto;
+}
+
+.newTextBoxWin {
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-left: 135px;
+    font-size: 24px;
+    height: 95px;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    display: block;
+}

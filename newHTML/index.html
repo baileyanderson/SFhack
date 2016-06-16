@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SF Chat Client</title>
+        <meta name="description" content="It's what the title says.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+    <!--MINIMIZED WINDOW-->    
+        <div id="mainframetab" class="mainframetab">
+            <div class="downarrowtab" onclick="toggle1()">
+                <img src="arrow.png"/>
+            </div>
+            <div class="titletab">Need help? Chat here!</div>
+        </div>
+        
+    <!--MAXIMIZED WINDOW-->
+        <div id="mainframe" class="mainframe">
+            <div class="downarrow" onclick="toggle2()">
+                <img src="arrow.png"/>
+            </div>
+            
+            <div class="title">StateFarm Chat Client</div>
+            
+                <div id="convow" class="convoWin" style="overflow":scroll;>
+                    
+                    <div class="greyboxjake">
+                        <div class="time">9:12 AM</div>
+                        <div class="profile"><img src="Jake.png" style="width: 56px; height: 56px;"></div>
+                        <div class="textcontainer">
+                            <b>Jake: </b>Hi, this is Jake from Statefarm. What do you need help with today?
+                        </div>
+                    </div>
+
+                    <div class="greyboxyou">             
+                        <div class="time">9:12 AM</div>
+                        <div class="profile"><img src="stock.jpg" style="width: 56px; height: 56px;"></div>
+                        <div class="textcontainer">
+                            <b>You: </b>Hi, this is Jake from Statefarm. What do you need help with today?
+                        </div>
+                    </div>
+                    
+                    <div class="greyboxjake">  
+                        <div class="time">9:15 AM</div>
+                        <div class="profile"><img src="Jake.png" style="width: 56px; height: 56px;"></div>
+                        <div class="textcontainer">
+                            <b>Jake: </b>Hi, this is Jake from Statefarm. What do you need help with today?
+                        </div>
+                    </div>
+
+                    <div class="greyboxyou"> 
+                        <div class="time">9:19 AM</div>
+                        <div class="profile"><img src="stock.jpg" style="width: 56px; height: 56px;"></div>
+                        <div class="textcontainer">
+                            <b>You: </b>Hi, this is Jake from Statefarm. What do you need help with today?
+                        </div>
+                    </div>
+
+                    <div class="greyboxjake">     
+                        <div class="time">9:20 AM</div>
+                        <div class="profile"><img src="Jake.png" style="width: 56px; height: 56px;"></div>
+                        <div class="textcontainer">
+                            <b>Jake: </b>Hi, this is Jake from Statefarm. What do you need help with today?
+                        </div>
+                    </div>
+                </div>  
+            
+                <!--TEXT AREA-->
+                    <div class="textBox">
+                        <textarea id="input" rows="4" cols="43" style="border: none"></textarea>
+
+                        <button class="send" type="button" onclick="sendButton()">SEND</button>
+
+                    <!--SEND BUTTON-->
+                        <script>
+                            function sendButton() {
+                                var x = document.getElementById("input").value; 
+                                var div = document.createElement('div');
+                                div.innerHTML = "You: " + x;
+                                div.setAttribute('class', "newTextBoxWin");
+                                document.getElementById("convow").appendChild(div);
+                                
+                                document.getElementById("input").value= "";
+                            }
+                        </script>
+                    </div>
+            </div>
+        
+    <!--TOGGLES-->    
+        <script>
+                function toggle1() {
+                    var n = document.getElementById("mainframe");
+                    n.style.display="inline-block";
+                    var n = document.getElementById("mainframetab");
+                    n.style.display="none";
+                }
+        </script>
+        <script>
+                function toggle2() {
+                    var n = document.getElementById("mainframetab");
+                    n.style.display="block";
+                    var n = document.getElementById("mainframe");
+                    n.style.display="none";
+                }
+        </script>
+    </body>
+</html>
