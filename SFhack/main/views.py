@@ -45,4 +45,4 @@ def indexS(request):
 		#'dicta2' : dicta[0],
 	}
 	#return HttpResponse(template.render(context, request))
-	return render(request, 'main/indexS.html', context)
+	return render(request, 'main/FAQ.html', context)
