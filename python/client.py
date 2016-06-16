@@ -4,7 +4,7 @@ import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "10.3.5.59"
-port = 8080
+port = 8081
 s.connect((host, port))
 
 

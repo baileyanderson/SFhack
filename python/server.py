@@ -1,9 +1,11 @@
 import socket
 from threading import *
 
+filepath = "/home/andrew/SFhack/python/temp.txt"
+
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "10.3.5.59"
-port = 8080
+port = 8081
 print(host)
 print(port)
 serversocket.bind((host, port))
@@ -31,6 +33,11 @@ class client(Thread):
                     out.append(thing)
 
             print(out)
+            y = ",".join(map(str, out))
+            with open(filepath, 'w') as f:
+                f.truncate()
+                f.write(y)
+                f.close()
 
             if str(msg) == str("stop"):
                 serversocket.close()
