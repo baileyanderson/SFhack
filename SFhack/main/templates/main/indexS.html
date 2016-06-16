@@ -1,0 +1,24 @@
+{% if dicta %}
+    <ul>
+    {% for question in dicta %}
+        <li><a>{{question.question_body}}</a></li>
+        <ul>
+        	<li><a>answer: {{question.question_answer}}</a></li>
+        </ul>
+        <br>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No #1.</p>
+{% endif %}
+
+
+{% if dicta2 %}
+    <ul>
+    {% for question in dicta2 %}
+        <li><a>{{question}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No #1.</p>
+{% endif %}

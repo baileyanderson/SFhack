@@ -5,6 +5,9 @@ from main.models import FAQ
 from operator import itemgetter
 
 def index(request):
+	return render(request, 'main/index.html')
+
+def indexS(request):
 	#listIn2 = FAQ.objects.order_by('id')[:5]
 	#keywordsInQuestion = ['claim', 'status', 'pizza', 'cat']
 	f = open("C:/Users/BAILEY/Programming/hackathon/stateFarm/pipe.txt", "r")
@@ -42,4 +45,4 @@ def index(request):
 		#'dicta2' : dicta[0],
 	}
 	#return HttpResponse(template.render(context, request))
-	return render(request, 'main/index.html', context)
+	return render(request, 'main/indexS.html', context)
