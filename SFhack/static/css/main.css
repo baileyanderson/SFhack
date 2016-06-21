@@ -17,12 +17,12 @@ body {
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     width: 657px;
-    height: 701px;
+    height: 700px;
     position: absolute;
     display: none;
     left: 25%;
-    width: 50%;
-    margin: 31.5% 0 0 -25%;
+    width: 35%;
+    margin: 42% 0 0 -10%;
     border-style: solid;
     border-color: #696969;
     border-width: thin;
@@ -118,8 +118,8 @@ body {
     display: block;
     position: relative;
     float: right;
-    margin-top: 6%;
-    margin-left: 4%;
+    margin-top: 7%;
+    margin-left: 2%;
     margin-right: 4%;
 }
 
@@ -129,7 +129,7 @@ textarea {
 }
 
 #input {
-    font-size: 20px;
+    font-size: 24px;
     resize: none;
     outline: none;
 }
@@ -143,7 +143,7 @@ textarea {
     position: absolute;
     display: block;
     left: 25%;
-    margin: 81.5% 0 0 -2%
+    margin: 80% 0 0 3%
 }
  
 .titletab {

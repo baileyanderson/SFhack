@@ -1,1 +1,1 @@
-fire
+claim,car,status
